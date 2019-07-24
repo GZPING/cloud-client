@@ -4,7 +4,6 @@ package com.eureka.client1.controller;
  * Created by GD on 2019/7/20.
  */
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 

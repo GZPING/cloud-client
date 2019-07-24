@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: dev
+
+
+---
+spring:
+  profiles: dev
+  application:
+    name: client1
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka-cluster/
+  instance:
+    hostname: localhost
+    status-page-url: https://${eureka.instance.hostname}/info
+    health-check-url: https://${eureka.instance.hostname}/health
+    home-page-url: https://${eureka.instance.hostname}/
